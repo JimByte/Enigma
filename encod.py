@@ -1,5 +1,6 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 RotorKey = 'dwebakxhzrnplyuqmjcstgivofgwutdzqlyckxapimvbnsorjehfhqcbuonrktefzvwidpxljsamyg'
+text='hi'
 def Reflector(R):
     return alphabet[(26-alphabet.find(R))-1]
 def OneCharUp(R):
@@ -9,7 +10,6 @@ def OneCharUp(R):
         R2.append(R[i])
     R2.append(R[0])
     return R2
-text='hi'
 Cipher=''
 R1 = list(RotorKey[0:26])
 R2 = list(RotorKey[26:52])
