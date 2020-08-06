@@ -39,7 +39,7 @@ def KeyGenaration():
     return str(Rotor1+Rotor2+Rotor3)
 inp=''
 while inp!='0':
-    print('-->  Welcome To Enigma Py by JimByte  <--'.center(100))
+    print('-->  Welcome To Enigma  <--'.center(100))
     print('Use this command : \n T ----> TRANSLATE \n K ----> NEW KEY \n 0 ----> EXIT')
     inp = input("Type your order : ")
     if inp=='T' or inp=='t':
