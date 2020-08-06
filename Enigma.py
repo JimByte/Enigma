@@ -3,13 +3,13 @@ def Rotate(c):
     return c[-1]+c[0:-1]
 def Reflector(c):
     return alphabet[(26-alphabet.find(c))-1]
-def Enigma(Plain_Cipher,Key):
+def Enigma(Text,Key):
     Cipher = ''
     State = 0
     K1 =Key[0:26]
     K2 =Key[26:52]
     K3 =Key[52:78]
-    for i in Plain_Cipher:
+    for i in Text:
         State+=1
         In1 = K1[alphabet.find(i)]
         In2 = K2[alphabet.find(In1)]
@@ -43,9 +43,9 @@ while inp!='0':
     print('Use this command : \n T ----> TRANSLATE \n K ----> NEW KEY \n 0 ----> EXIT')
     inp = input("Type your order : ")
     if inp=='T' or inp=='t':
-        PlainCipher = input('Input Your Plain or Cipher : ')
-        Key = input('Input Your Enigma Key :')
-        print(Enigma(PlainCipher, Key))
+        inText = input('Input Your Plain or Cipher : ')
+        inKey = input('Input Your Enigma Key : ')
+        print(Enigma(inText,inKey))
     if inp=='K' or inp=='k':
         print('Save Your key --->  '+KeyGenaration())
     print('-------------------------------------------------------------------------------------')
