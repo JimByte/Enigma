@@ -1,4 +1,4 @@
-# Enigma
+# Enigma (Learning Proj.)
 
 The Python Enigma machine is an encryption program. 
 ## How To Use
